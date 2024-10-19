@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Live Wallpaper Background</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    /* Set up the video background */
+    .video-background {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%; 
+      min-height: 100%;
+      z-index: -1; /* Send video behind content */
+    }
+
+    /* Add some content over the video */
+    .content {
+      position: relative;
+      z-index: 1;
+      color: white;
+      text-align: center;
+      font-size: 2rem;
+      padding-top: 50vh; /* Center the content */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Video Background -->
+  <video class="video-background" autoplay muted loop>
+    <source src="your-video.mp4" type="video/mp4">
+    <!-- Add fallback for browsers that don't support video -->
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Page Content -->
+  <div class="content">
+    <h1>Welcome to My Website!</h1>
+    <p>This is an example of a live video background.</p>
+  </div>
+
+</body>
+</html>

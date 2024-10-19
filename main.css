@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  background-color: #ffe5e5;
+  background-image: url('love2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.ask {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 50px;
+  padding: 10px;
+  gap: 10px;
+  max-width: 500px;
+  margin: 10px;
+
+}
+
+.ask .tenor-gif-embed {
+  max-width: 200px;
+}
+
+.ask .ask2 {
+  display: flex;
+  gap: 25px;
+  padding: 10px;
+}
+
+.ask2 a {
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  padding: 7px 15px;
+  border-radius: 5px;
+  box-shadow: 0.5rem 1rem 3rem hsl(0, 0%, 0%, 0.3);
+}
+
+#kanishka {
+  border-radius: 500px;
+  width: 200px;
+  height: auto;
+}
+
+#somendra {
+  border-radius: 500px;
+  width: 200px;
+  height: auto;
+  animation: anim 5s linear infinite;
+}
+
+marquee {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  height: 100vh;
+
+}
+
+img {
+  width: 200px;
+  animation: anim 5s linear infinite;
+}
+
+@keyframes anim {
+  0% {
+    transform: rotate(0edge);
+  }
+}
+
+.video-background {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
